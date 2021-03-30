@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="1"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_DiceImage" />
+
+    <Button
+        android:id="@+id/btn_roleDice"
+        android:layout_width="88dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="68dp"
+        android:text="Role"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Output"
+        app:layout_constraintStart_toStartOf="@+id/tv_Output"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Output" />
+
+    <ImageView
+        android:id="@+id/iv_DiceImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/dice_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
